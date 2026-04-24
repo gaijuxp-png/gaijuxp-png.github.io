@@ -1,0 +1,26 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#07111f;color:#edf4ff;line-height:1.5}
+.site-header{max-width:1120px;margin:0 auto;padding:1.25rem;display:flex;align-items:center;gap:1rem}
+.brand-logo{width:4rem;height:4rem;object-fit:contain;border-radius:1rem;background:#0d1a2d}
+.container{max-width:1120px;margin:0 auto;padding:0 1.25rem 2rem;display:grid;gap:1.25rem}
+.summary-grid{display:grid;gap:1rem;grid-template-columns:repeat(3,minmax(0,1fr))}
+.card,.panel{background:#0d1a2d;border:1px solid rgba(255,255,255,.08);border-radius:1.25rem;padding:1.2rem}
+.field-error{display:block;min-height:1em;color:#ef6a6a;margin:.25rem 0 .75rem}
+label{display:block;margin-top:.85rem;margin-bottom:.35rem}
+input,select{width:100%;padding:.9rem 1rem;border-radius:.9rem;border:1px solid rgba(255,255,255,.08);background:#10233c;color:#edf4ff}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #4f7cff;outline-offset:2px}
+.btn-primary,.btn-secondary,.delete-btn{border:0;border-radius:.9rem;cursor:pointer}
+.btn-primary{width:100%;padding:.95rem 1.1rem;margin-top:1rem;background:linear-gradient(135deg,#4f7cff,#2dd4bf);color:#fff;font-weight:700}
+.btn-secondary{padding:.75rem 1rem;background:#10233c;color:#edf4ff;border:1px solid rgba(255,255,255,.08)}
+.section-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1rem}
+.transactions{list-style:none;margin:0;padding:0;display:grid;gap:.8rem}
+.transaction,.empty-state{background:#10233c;border:1px solid rgba(255,255,255,.08);border-radius:1rem;padding:1rem}
+.transaction{display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.transaction-main p{margin:.2rem 0 0;color:#9ab0cb}
+.transaction-side{display:flex;align-items:center;gap:.65rem}
+.amount{font-weight:800;white-space:nowrap}
+.amount.income{color:#14b87a}
+.amount.expense{color:#ef6a6a}
+.delete-btn{width:2.5rem;height:2.5rem;background:rgba(239,106,106,.12);color:#ff9b9b}
+.feedback{min-height:1.25rem;margin-top:.85rem;color:#9ab0cb}
+@media (max-width:860px){.summary-grid{grid-template-columns:1fr}.transaction{flex-direction:column;align-items:flex-start}.transaction-side{width:100%;justify-content:space-between}}
